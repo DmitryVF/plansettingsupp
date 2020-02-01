@@ -1,34 +1,19 @@
-import updateBookList from './book-list';
-import updateShoppingCart from './shopping-cart';
+import updatePlanSettings from './plan-settings';
+import updateProfile from './profile';
 
 const initialState = {
-	// it concerns manipulations with books only
-	bookList: {
-		books: [],
-		loading: true,
-		error: null,
-	},
-
-	// it concerns manipulations with cart only
-	shoppingCart: {
-		cartItems: [
-		// {
-		// 	id: 1, 
-		// 	title: "Book 1",
-		// 	count: 3, 
-		// 	total: 150
-		// },
-
-		// {
-		// 	id: 2, 
-		// 	title: "Book 2",
-		// 	count: 2, 
-		// 	total: 70
-		// }
-		],
-		orderTotal: 0
-	}
 	
+	planSettings: {
+		billType:'monthly',
+		planType: 'trials'
+	},
+	profile: {
+			name: 'John Due', 
+			email: 'JohnDue1234@gmail.com',
+			currentPassword: "**********",
+			newPassword: "New Password",
+			confirmPassword: "Confirm New Password"
+	}
 };
 
 
@@ -39,29 +24,11 @@ const initialState = {
 // const reducer = (state = initialState, action) => {
 
 const reducer = (state, action) => {
-	// console.log(action.type);
+	console.log('state');
 	return {
-		bookList: updateBookList(state, action), 
-		shoppingCart: updateShoppingCart(state, action)
+		planSettings: updatePlanSettings(state, action), 
+		profile: updateProfile(state, action)
 	}
-	// switch (action.type){
-	// 	case 'FETCH_BOOKS_REQUEST':
-	// 	case 'FETCH_BOOKS_SUCCESS':
-	// 	case 'FETCH_BOOKS_FAILURE':
-	// 		return {
-	// 			...state,
-	// 			bookList: updateBookList(state, action)
-	// 		};
-	// 	case 'BOOK_ADDED_TO_CART':
-	// 	case 'BOOK_DECREASED_IN_CART':
-	// 	case 'BOOK_DELETED_IN_CART':
-	// 		return {
-	// 			...state,
-	// 			shoppingCart: updateShoppingCart (state, action)
-	// 		};
- //        default:
-	// 		return state;
-	// }
 } 
 export default reducer;
 

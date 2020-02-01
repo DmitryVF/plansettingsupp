@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom';
  import { Layout } from 'antd';
  
  import './app.css';
+ 
 
 const { Header, Footer, Sider, Content } = Layout;
 
@@ -19,15 +20,16 @@ const App = () => {
 
   <Layout>
     <Header>
-        <Link to='/HomePage'>
+        <Link to='/'>
                 <Button type="primary">Plan settings</Button>
         </Link>
         <Link to='/profile'>
                 <Button type="primary">Profile</Button>
         </Link>
     </Header>
-      <Layout>
-        <Content>
+  </Layout>
+      
+       
             <Switch>
                 <Route 
                 path='/'
@@ -39,12 +41,10 @@ const App = () => {
                 component={ProfilePage}
                 />
             </Switch>
-        </Content>
-      </Layout>
-    <Footer>
-        
-    </Footer>
-  </Layout>
+       
+     
+   
+  
 
 
 

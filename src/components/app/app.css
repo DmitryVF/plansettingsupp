@@ -2,4 +2,395 @@
 
 .App {
   text-align: center;
+background: #E5E5E5;
+}
+.main{
+margin-top: 10px;
+}
+.rectangle5{
+	/* Rectangle 5 */
+background: #E5E5E5;	
+margin: auto;
+/*position: absolute;*/
+display: flex;
+
+width: 972px;
+height: 1066px;
+
+/*background: rgba(247, 246, 248, 0.9);*/
+opacity: 0.8;
+border-radius: 10px;
+}
+.titlewrapper{
+	width: 949px;
+	opacity: 100%;
+	position: absolute;
+	height: 30px;
+}
+
+.vector65{
+	/* Vector 65 */
+
+
+position: relative;
+left: 75px;
+top: 0.5em;
+width: 838px;
+height: 0px;
+
+opacity: 0.3;
+/* 4 */
+
+border: 1px solid #D0D0DA;
+}
+
+.planSettings{
+	position: absolute;
+width: 154px;
+height: 37px;
+
+font-family: Bebas Neue;
+font-style: normal;
+/*font-weight: bold;*/
+font-size: 24px;
+line-height: 154.4%;
+/* identical to box height, or 37px */
+
+display: flex;
+align-items: center;
+
+/* 5 */
+
+color: #161551;
+}
+.planSettings span{
+color: #FB3F3C;
+padding-right: 4px;
+}
+
+.rectangle4{
+	/* Rectangle 4 */
+position: absolute;
+top:130px;
+float: left;
+width: 972px;
+height: 530px;
+
+background: #F7F6F8;
+border-radius: 10px;
+}
+.switchwrapper{
+	height: 110px;
+	width: auto;
+	margin-left: 360px;
+}
+.bill{
+	/* Bill monthly */
+
+
+/*position: absolute;*/
+width: 84px;
+height: 22px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 154.4%;
+/* identical to box height, or 22px */
+
+margin-top: 28px;
+/* 5 */
+
+color: #161551;
+display: inline-block;
+float: left;
+}
+.bold{
+font-weight: 600;
+}
+.normal{
+font-weight: normal;
+}
+.switch{
+	display: inline-block;
+	float: left;
+	height: 22px;
+	
+	margin: 5px ;
+	margin-top: 28px;
+}
+.ant-tooltip-inner {
+	background: #78A4FC;
+}
+
+
+.ant-tooltip-arrow ::before {
+	background-color: #78A4FC !important;
+	 border-color: #78A4FC !important;
+}
+
+.cardsumwrapper{
+	padding: 0px 30px;
+}
+.rectangle4_1{
+/* Rectangle 4 */
+
+
+float: left;
+width: 284.52px;
+height: 374px;
+
+background: #FFFFFF;
+/* 2 */
+
+box-shadow: 30px 40px 40px rgba(95, 100, 130, 0.25);
+border-radius: 10px;
+margin: 0px 9px;
+}
+
+.rectangle12{
+	/* Rectangle 12 */
+
+position: absolute;
+width: 285px;
+height: 58px;
+
+/* 2 */
+/*background: #4E5A79;*/
+/*opacity: 0.05;*/
+/*border-radius: 0px 10px ;*/
+background-image: url(./images/Rectangle12.png);
+/*background-image: url(./media/rectangle12.png);*/
+
+}
+.rectangle11{
+	/* Rectangle 11 */
+
+position: absolute;
+width: 285px;
+height: 65px;
+background-image: url(./images/Rectangle11.png);
+/*background-image: url(./media/rectangle12.png);*/
+/* 2 */
+/*background: #4E5A79;*/
+/*opacity: 0.05;*/
+/*border-radius:  0px 10px;*/
+
+}
+.rectangle10{
+	/* Rectangle 11 */
+
+position: absolute;
+width: 285px;
+height: 65px;
+background-image: url(./images/Rectangle5.png);
+/*background-image: url(./media/rectangle12.png);*/
+/* 2 */
+/*background: #4E5A79;*/
+/*opacity: 0.05;*/
+/*border-radius:  0px 10px;*/
+
+}
+
+.wrapper1{
+	height: 63px;
+	width: auto;
+	display: block;
+	/*margin-left: 360px;*/
+}
+
+.planname{
+	/* 13 days trials plan */
+
+/*position: absolute;*/
+width: auto;
+height: 37px;
+
+font-family: Bebas Neue;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 154.4%;
+/* identical to box height, or 37px */
+/*display: flex;*/
+/*align-items: center;*/
+text-align: center;
+
+color: #161551;
+
+
+}
+
+.planprice{
+	/* $ 0 */
+
+/*position: absolute;*/
+width: auto;
+height: 60px;
+
+font-family: Bebas Neue;
+font-style: normal;
+font-weight: bold;
+font-size: 50px;
+line-height: 154.4%;
+/* or 77px */
+/*display: flex;*/
+/*align-items: center;*/
+text-align: center;
+
+/* 3 */
+color: #FB3F3C;
+
+}
+.permonth{
+	/* per month */
+
+/*position: absolute;*/
+width: auto;
+height: 40px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 154.4%;
+/* identical to box height, or 22px */
+/*display: flex;*/
+/*align-items: flex-end;*/
+text-align: center;
+
+/* 2 */
+color: #4E5A79;
+
+}
+
+.plandescription{
+	/* Plan Description */
+/*position: absolute;*/
+width: auto;
+height: 30px;
+font-family: Poppins;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 154.4%;
+/* identical to box height, or 22px */
+
+/*display: flex;*/
+/*align-items: flex-end;*/
+text-align: center;
+/* 5 */
+color: #161551;
+}
+.descriptiontext{
+	/* Lorem ipsum dolor sit amet, eiusmo dconsectetur adipiscing elit, sed do eiusmod tempor incididunt */
+
+/*position: absolute;*/
+width: auto;
+height: 74px;
+padding: 0px 10px;
+font-family: Poppins;
+font-style: normal;
+font-weight: 300;
+font-size: 12px;
+line-height: 25px;
+display: flex;
+align-items: flex-end;
+text-align: center;
+left:25px;
+/* 2 */
+color: #4E5A79;
+
+}
+.buttonwrapper{
+height: 74px;
+margin-top: 20px;
+float: right;
+padding-right: 15px;
+}
+.buttonselected, .buttonselected:focus {
+	/* Rectangle 77 */
+
+/*position: absolute;*/
+width: 87px;
+height: 32px;
+
+/* Green 3 */
+background: #6FCF97;
+border-radius: 3px;
+border-color: #6FCF97;
+}
+.buttonselected:hover{
+background: #71D199;
+border-color: #6FCF97;
+}
+
+buttonselected::after{
+	display: none;
+}
+
+.confirm{
+	background-image: url(./images/Vector-2.png);
+	width: 16px;
+	height: 16px;
+	margin-top: 3px;
+	margin-left: 22px;
+	position: absolute;
+
+}
+/*.confirm1{
+	background-image: url(./images/Vector-1.png);
+	background-image: url(./images/Vector.png);
+	width: 16px;
+	height: 16px;
+	margin-top: 3px;
+	margin-left: 22px;
+	position: absolute;
+}*/
+.buttontextselected{
+
+	position: absolute;
+	right: 40px;
+	padding-left: -10px;
+}
+.buttonselected span{
+	margin-left: -15px;
+}
+.buttontextbox{
+	height: 74px;
+margin-top: -26px;
+}
+
+.circleopa{
+	/* Rectangle 50 */
+top:128px;
+margin-left: 10px;
+position: absolute;
+width: 56px;
+height: 56px;
+
+background: #F6B750;
+opacity: 0.2;
+border-radius: 2900px;
+
+}
+.circle{
+	/* Rectangle 80 */
+top:132px;
+margin-left: 14px;
+position: absolute;
+width: 47.22px;
+height: 46.12px;
+
+background: #F6B750;
+border-radius: 2900px;
+}
+.crown{
+	margin-top: 12px;
+	margin-left: 9px;
+	height: 28px;
+	width: 30px;
+	background-repeat: no-repeat;
+	background-image: url(./images/Crown.png);
 }
