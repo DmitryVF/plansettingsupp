@@ -23,15 +23,21 @@ let billAnnually;
 
 const Card = ({planName, price, featured, selected})=>{
 
-	let classNames, classNames1;
+	let classNames, classNames1, style;
 	if(featured == "true"){
 		classNames = "rectangle10";
 		classNames1 = "";
+		style= {};
 	}else{
 		classNames = "";
 		classNames1 = "rectangle11";
+		style={display:'none'};
 	}
 
+// const style = {
+// 		color: important ? 'steelblue' : 'black',
+// 		fontWeight: important ? 'bold' : 'normal'
+// 	};
 	return (
 
 		      		  	<div className = "rectangle4_1">
@@ -40,9 +46,9 @@ const Card = ({planName, price, featured, selected})=>{
 		      		  			<div className={classNames1} /> 
 		      		  			<div className={classNames} />
 	      		  			</div>
-	      		  			<div className= "circleopa"/>
-	      		  			<div className= "circle">
-	      		  			<div className="crown"/>
+	      		  			<div style={style} className= "circleopa"/>
+	      		  			<div style={style} className= "circle">
+	      		  			<div style={style} className="crown"/>
 	      		  			</div>
 	      		  			<div className="wrapper1">
 	      		  				<div className="planname">
