@@ -21,10 +21,10 @@ const App = () => {
   <Layout>
     <Header>
         <Link to='/'>
-                <Button type="primary">Plan settings</Button>
+                <Button type="link">Plan settings</Button>
         </Link>
         <Link to='/profile'>
-                <Button type="primary">Profile</Button>
+                <Button type="link">Profile</Button>
         </Link>
     </Header>
   </Layout>

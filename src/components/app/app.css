@@ -15,7 +15,7 @@ margin: auto;
 display: flex;
 
 width: 972px;
-height: 1066px;
+height: 800px;
 
 /*background: rgba(247, 246, 248, 0.9);*/
 opacity: 0.8;
@@ -310,7 +310,10 @@ margin-top: 20px;
 float: right;
 padding-right: 15px;
 }
-.buttonselected, .buttonselected:focus {
+.ant-btn-selected, .ant-btn-selected:focus {
+width: 87px;
+}
+.ant-btn-default, .ant-btn-default:focus {
 	/* Rectangle 77 */
 
 /*position: absolute;*/
@@ -322,14 +325,14 @@ background: #6FCF97;
 border-radius: 3px;
 border-color: #6FCF97;
 }
-.buttonselected:hover{
+.ant-btn-default:hover{
 background: #71D199;
 border-color: #6FCF97;
 }
 
-buttonselected::after{
+/*.buttonselected::after{
 	display: none;
-}
+}*/
 
 .confirm{
 	background-image: url(./images/Vector-2.png);
@@ -355,8 +358,13 @@ buttonselected::after{
 	right: 40px;
 	padding-left: -10px;
 }
-.buttonselected span{
+.ant-btn-default span{
 	margin-left: -15px;
+	color: white;
+}
+.ant-btn-default span:hover{
+	margin-left: -15px;
+	color: white;
 }
 .buttontextbox{
 	height: 74px;

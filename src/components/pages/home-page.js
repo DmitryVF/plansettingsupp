@@ -23,7 +23,7 @@ let billAnnually;
 
 const Card = ({planName, price, featured, selected})=>{
 
-	let classNames, classNames1, style;
+	let classNames, classNames1, style, buttontype,showselected,buttontext ;
 	if(featured == "true"){
 		classNames = "rectangle10";
 		classNames1 = "";
@@ -34,10 +34,16 @@ const Card = ({planName, price, featured, selected})=>{
 		style={display:'none'};
 	}
 
-// const style = {
-// 		color: important ? 'steelblue' : 'black',
-// 		fontWeight: important ? 'bold' : 'normal'
-// 	};
+	if(selected == "true"){
+		buttontype = "default";
+		buttontext = "selected";
+	}else{
+		buttontype = "selected";
+		showselected={display:'none'};
+		buttontext = "select";
+	}
+
+
 	return (
 
 		      		  	<div className = "rectangle4_1">
@@ -68,10 +74,10 @@ const Card = ({planName, price, featured, selected})=>{
 		      		  			Lorem ipsum dolor sit amet, eiusmo dconsectetur adipiscing elit, sed do eiusmod tempor incididunt
 		      		  			</div>
 		      		  			<div className='buttonwrapper'>
-		      		  				<Button className="buttonselected" type="primary" >
-		      		  					Selected
+		      		  				<Button className="" type={buttontype} >
+		      		  					{buttontext}
 		      		  				</Button>
-		      		  					<div className='buttontextbox'>	
+		      		  					<div className='buttontextbox' style={showselected}>	
 		      		  					 
 		      		  					<span className='confirm'/>
 		      		  					<span className='confirm1'/>
@@ -137,8 +143,8 @@ render (){
 	      		  	</div>
 			<div className="cardsumwrapper">	      		  	
       		<Card planName = "13 DAYS TRIALS PLAN" price = "$ 0" featured ="false" selected ="true"/>
-      		<Card planName = "PLAN NAME 2" price = "$ 100" featured ="false" selected ="true"/>
-      		<Card planName = "UNLIMITED PACAGES" price = "$ 300" featured ="true" selected ="true"/>
+      		<Card planName = "PLAN NAME 2" price = "$ 100" featured ="false" selected ="false"/>
+      		<Card planName = "UNLIMITED PACAGES" price = "$ 300" featured ="true" selected ="false"/>
       		</div>
 
       		 	  </div>
