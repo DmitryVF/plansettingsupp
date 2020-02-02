@@ -26,9 +26,7 @@ const App = () => {
         <Link to='/profile'>
                 <Button type="link">Profile</Button>
         </Link>
-        <Link to='/profile-edit'>
-                <Button type="link">Profile-edit</Button>
-        </Link>
+        
     </Header>
   </Layout>
       
