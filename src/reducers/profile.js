@@ -10,6 +10,18 @@ const updateProfile = (state, action) => {
 			confirmPassword: "Confirm New Password"
 		}
 	}
+	switch (action.type) {
+		case 'PROFILE_EDIT':
+			console.log('PROFILE_EDIT');
+			return  {
+				planType: state.planSettings.planType, 
+				billType: action.payload
+			}
+		
+        default:
+
+        	return state.profile;
+	}
 	// switch (action.type) {
 	// 	case 'BOOK_ADDED_TO_CART':
  //        	return updateOrder(state, action.payload, 1);

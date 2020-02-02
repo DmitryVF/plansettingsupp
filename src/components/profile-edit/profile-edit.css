@@ -1,16 +1,23 @@
 
 
-.rectangle92{
+.rectangle85{
 	/* Rectangle 92 */
 margin: 57px auto;
 
 width: 886px;
-height: 398px;
-
+height: 672px;
 background: #F7F6F8;
 border-radius: 10px;
 /*padding: 40px;*/
+box-shadow: 30px 40px 40px rgba(95, 100, 130, 0.25);
+border-radius: 10px;
 }
+
+
+
+
+
+
 .rectangle92_1{
 	/* Rectangle 92 */
 
@@ -57,45 +64,24 @@ background-color: #FB3F3C;
 border: 2px solid #FB3F3C;
 
 }
-.editbuttonwrapper{
-	margin-top: 21px;
-	margin-right: 5px;
+.exitbuttonwrapper{
+	margin-top: 20px;
+	margin-right: 20px;
 	display: inline-block;
 	float: right;
 }
-.ellipse49{
-/* Ellipse 49 */
-width: 33px;
-height: 33px;
 
-background: #D0D0DA;
-opacity: 0.2;
-border-radius: 2900px;
-}
-.square{
-top: -30px;
-left: 7px;
+.circlebtn{
+top: 0px;
+left: 18px;
 position: relative;
 }
-.pen{
-top: -32px;
-left: -6px;
+.cross{
+top: 0px;
+left: 0px;
 position: relative;
 }
-.edit{
-	/* Edit */
-margin-left: -14px;
-width: 61px;
-height: 27px;
-font-family: Poppins;
-font-style: normal;
-font-weight: 500 !important;
-font-size: 14px !important;
 
-/* 3 */
-color: #FB3F3C !important;
-
-}
 
 .circlephoto {
 	display: inline-block;
@@ -162,3 +148,51 @@ padding-left: 15px;
 /*.nameheading input:hover{
 	border: none;
 }*/
+
+.ant-input-affix-wrapper .ant-input-suffix{
+	/*right: -135px;*/
+}
+.ant-input-password{
+width: 146% !important;
+}
+.ant-form-explain{
+	font-weight: normal;
+	width: 442px;
+	margin-bottom: -20px !important;
+}
+.ant-btn-primary{
+	/* Rectangle 86 */
+
+width: 96px;
+height: 39px;
+/* 3 */
+background-color: #FB3F3C !important;
+/* 3 */
+border: 1px solid #FB3F3C !important;
+
+}
+
+.ant-btn-active{
+	width: 96px;
+	height: 39px;
+	border: 1px solid #FB3F3C !important;
+}
+
+.ant-form-item{
+	margin-bottom: 19px !important;
+}
+.buttonrow div{
+
+	display: inline-block;
+	float: center;
+}
+
+.buttonrow div.ant-form-item{
+	margin-top: -5px;
+	margin-left: -23px;
+}
+
+
+.buttonrow{
+	margin-top: 50px;
+}

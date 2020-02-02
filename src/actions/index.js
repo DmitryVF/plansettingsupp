@@ -20,3 +20,10 @@ export const planSelected = (plan) => {
 	};
 };
 
+export const profileEdit = (userData) => {
+	return {
+		type: 'PLAN_TYPE_CHANGED',
+		payload: userData
+	};
+};
+

@@ -55,19 +55,19 @@ class Profile extends Component {
 							<div className="nameheading">
 								First Last Name
 							</div>
-							<div className="nameheading">
+							<div className="formheading">
 								<Input disabled defaultValue={name} />
 							</div>
 							<div className="nameheading">
 								Email
 							</div>
-							<div className="nameheading">
+							<div className="formheading">
 								<Input disabled defaultValue={email} />
 							</div>
 							<div className="nameheading">
 								Password
 							</div>
-							<div className="nameheading">
+							<div className="formheading">
 								<Input disabled defaultValue={currentPassword} />
 							</div>
 							

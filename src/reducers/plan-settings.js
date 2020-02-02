@@ -19,7 +19,7 @@ const updatePlanSettings = (state, action) => {
 				
 			}
         default:
-        	return state.bookList;
+        	return state.planSettings;
 	}
 	console.log(state);
 };
