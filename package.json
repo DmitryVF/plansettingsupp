@@ -15,7 +15,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "predeploy": "npm run build",
+    
     "deploy": "gh-pages -d build -r http://github.com/dmitryVF/plansettingsupp",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -32,5 +32,5 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "http://dmitryVF.github.io/planSettingsApp"
+  "homepage": "https://dmitryVF.github.io/planSettingsApp"
 }
