@@ -36,11 +36,11 @@ const Card = ({planName, price, featured, selected})=>{
 
 	if(selected == "true"){
 		buttontype = "default";
-		buttontext = "selected";
+		buttontext = "Selected";
 	}else{
 		buttontype = "selected";
 		showselected={display:'none'};
-		buttontext = "select";
+		buttontext = "Select";
 	}
 
 

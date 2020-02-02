@@ -1,5 +1,5 @@
 import React from 'react';
-import { HomePage, ProfilePage } from '../pages';
+import { HomePage, ProfilePage, ProfileEditPage } from '../pages';
 import  { Route, Switch } from 'react-router-dom';
 //import { HomePage, CartPage } from '../pages';
 import { Link } from 'react-router-dom';
@@ -26,6 +26,9 @@ const App = () => {
         <Link to='/profile'>
                 <Button type="link">Profile</Button>
         </Link>
+        <Link to='/profile-edit'>
+                <Button type="link">Profile-edit</Button>
+        </Link>
     </Header>
   </Layout>
       
@@ -39,6 +42,11 @@ const App = () => {
                 <Route 
                 path='/profile'
                 component={ProfilePage}
+                />
+
+                <Route 
+                path='/profile-edit'
+                component={ProfileEditPage}
                 />
             </Switch>
        

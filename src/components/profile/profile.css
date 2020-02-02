@@ -9,5 +9,153 @@ height: 398px;
 
 background: #F7F6F8;
 border-radius: 10px;
+/*padding: 40px;*/
+}
+.rectangle92_1{
+	/* Rectangle 92 */
+
+width: 886px;
+height: 88px;
 
 }
+.header{
+	margin-top: 33px;
+	display: inline-block;
+	margin-left: 63px;
+	width: 300px;
+	height: 30px;
+	float: left;
+}
+.title{
+
+	/* Your Profile */
+/*position: absolute;*/
+width: 144px;
+height: 37px;
+margin-left: 10px;
+font-family: Bebas Neue;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 154.4%;
+/* identical to box height, or 37px */
+display: flex;
+align-items: center;
+
+color: #161551;
+
+
+}
+.vector44{
+	/* Vector 44 */
+margin-top: 5px;
+position: absolute;
+width: 0px;
+height: 20px;
+background-color: #FB3F3C;
+/* 3 */
+border: 2px solid #FB3F3C;
+
+}
+.editbuttonwrapper{
+	margin-top: 21px;
+	margin-right: 5px;
+	display: inline-block;
+	float: right;
+}
+.ellipse49{
+/* Ellipse 49 */
+width: 33px;
+height: 33px;
+
+background: #D0D0DA;
+opacity: 0.2;
+border-radius: 2900px;
+}
+.square{
+top: -30px;
+left: 7px;
+position: relative;
+}
+.pen{
+top: -32px;
+left: -6px;
+position: relative;
+}
+.edit{
+	/* Edit */
+margin-left: -14px;
+width: 61px;
+height: 27px;
+font-family: Poppins;
+font-style: normal;
+font-weight: 500 !important;
+font-size: 14px !important;
+
+/* 3 */
+color: #FB3F3C !important;
+
+}
+
+.circlephoto {
+	display: inline-block;
+	float: left;
+	width: 110px;
+	height: 110px;
+	background: #7F6DF0;
+    overflow: hidden;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    margin-left: 73px;
+}
+.circlephoto img {
+    display: block;
+    width:100%;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+.profiledata{
+	display: inline-block;
+	float: left;
+	margin-left: 36px;
+}
+
+.nameheading{
+	/* First Last Name */
+/*width: 331px;*/
+text-align: left;
+margin-bottom: 9px;
+font-family: Poppins;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 154.4%;
+/* identical to box height, or 22px */
+color: #161551;
+}
+
+.nameheading .ant-input, .ant-input[disabled]{
+	/* First Last Name */
+/*width: 331px;*/
+width: 454px;
+height: 44px;
+background: #FFFFFF !important;
+border-radius: 200px;
+border: none;
+font-family: Poppins;
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 18px;
+display: flex;
+align-items: center;
+color: #161551 !important;
+cursor: text !important;
+padding-left: 15px;
+}
+
+/*.nameheading input:hover{
+	border: none;
+}*/
