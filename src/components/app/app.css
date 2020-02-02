@@ -166,11 +166,11 @@ background-image: url(./images/Rectangle11.png);
 }
 .rectangle10{
 	/* Rectangle 11 */
-
+opacity: 100% !important;
 position: absolute;
 width: 285px;
 height: 65px;
-opacity: 100%;
+
 background-image: url(./images/Rectangle5.png);
 
 }
