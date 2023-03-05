@@ -201,11 +201,11 @@ class RegistrationForm extends React.Component {
                 </Button>
               </Link>
             </div>
-            <Form.Item {...tailFormItemLayout}>
-              <Button type="primary" htmlType="submit">
-                Save
-              </Button>
-            </Form.Item>
+            {/* <Form.Item {...tailFormItemLayout}> */}
+            <Button type="primary" htmlType="submit">
+              Save
+            </Button>
+            {/* </Form.Item> */}
           </div>
         </div>
       </Form>

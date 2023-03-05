@@ -184,12 +184,15 @@ border: 1px solid #FB3F3C !important;
 .buttonrow div{
 
 	display: inline-block;
-	float: center;
+	padding: 10px;
+
 }
 
 .buttonrow div.ant-form-item{
-	margin-top: -1px;
-	margin-left: -23px;
+	/* margin: 0px; */
+	/* padding: 0px; */
+	/* margin-top: -1px; */
+	/* margin-left: -23px; */
 }
 
 
