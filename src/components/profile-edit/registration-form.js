@@ -23,7 +23,7 @@ const AutoCompleteOption = AutoComplete.Option;
 
 class RegistrationForm extends React.Component {
 
-  
+
 
   state = {
     confirmDirty: false,
@@ -72,7 +72,7 @@ class RegistrationForm extends React.Component {
   };
 
   render() {
-    const {name, email, currentPassword} = this.props;
+    const { name, email, currentPassword } = this.props;
     const { getFieldDecorator } = this.props.form;
     const { autoCompleteResult } = this.state;
 
@@ -113,102 +113,102 @@ class RegistrationForm extends React.Component {
 
     return (
 
-     <Form {...formItemLayout} onSubmit={this.handleSubmit}>
-      <div >
+      <Form {...formItemLayout} onSubmit={this.handleSubmit}>
+        <div >
 
-        <div className="nameheading">
-                First Last Name
-        </div>
-        <div className="formheading">
-        <Form.Item>
-          {getFieldDecorator('nickname', {
-            initialValue: name,
-            rules: [{ required: true, message: 'Please input your nickname!', whitespace: true }],
-          })(<Input placeholder={name} />)}
-        </Form.Item>
-        </div>
+          <div className="nameheading">
+            First Last Name
+          </div>
+          <div className="formheading">
+            <Form.Item>
+              {getFieldDecorator('nickname', {
+                initialValue: name,
+                rules: [{ required: true, message: 'Please input your nickname!', whitespace: true }],
+              })(<Input placeholder={name} />)}
+            </Form.Item>
+          </div>
 
-        <div className="nameheading">
-                Email
-        </div>
-        <div className="formheading">
-        <Form.Item>
-          {getFieldDecorator('email', {
-            initialValue: email,
-            rules: [
-              {
-                type: 'email',
-                message: 'The input is not valid E-mail!',
-              },
-              {
-                required: true,
-                message: 'Please input your E-mail!',
-              },
-            ],
-          })(<Input />)}
-        </Form.Item>
-        </div>
+          <div className="nameheading">
+            Email
+          </div>
+          <div className="formheading">
+            <Form.Item>
+              {getFieldDecorator('email', {
+                initialValue: email,
+                rules: [
+                  {
+                    type: 'email',
+                    message: 'The input is not valid E-mail!',
+                  },
+                  {
+                    required: true,
+                    message: 'Please input your E-mail!',
+                  },
+                ],
+              })(<Input />)}
+            </Form.Item>
+          </div>
 
-        <div className="nameheading">
-                Current Password
-        </div>
-        <div className="formheading">
+          <div className="nameheading">
+            Current Password
+          </div>
+          <div className="formheading">
             <Input disabled defaultValue={currentPassword} />
-        </div>
+          </div>
 
-        <div className="nameheading">
-                New Password
-        </div>
-        <div className="formheading">
-        <Form.Item hasFeedback>
-          {getFieldDecorator('password', {
-            rules: [
-              {
-                required: true,
-                message: 'Please input your password!',
-              },
-              {
-                validator: this.validateToNextPassword,
-              },
-            ],
-          })(<Input.Password />)}
-        </Form.Item>
-        </div>
+          <div className="nameheading">
+            New Password
+          </div>
+          <div className="formheading">
+            <Form.Item hasFeedback>
+              {getFieldDecorator('password', {
+                rules: [
+                  {
+                    required: true,
+                    message: 'Please input your password!',
+                  },
+                  {
+                    validator: this.validateToNextPassword,
+                  },
+                ],
+              })(<Input.Password />)}
+            </Form.Item>
+          </div>
 
-        <div className="nameheading">
-              Confirm New Password
+          <div className="nameheading">
+            Confirm New Password
+          </div>
+          <div className="formheading">
+            <Form.Item hasFeedback>
+              {getFieldDecorator('confirm', {
+                rules: [
+                  {
+                    required: true,
+                    message: 'Please confirm your password!',
+                  },
+                  {
+                    validator: this.compareToFirstPassword,
+                  },
+                ],
+              })(<Input.Password onBlur={this.handleConfirmBlur} />)}
+            </Form.Item>
+          </div>
+          <div className="buttonrow">
+            <div className='btn-cancel'>
+              <Link to='/plansettingsupp/profile'>
+                <Button type="active" >
+                  Cancel
+                </Button>
+              </Link>
+            </div>
+            <Form.Item {...tailFormItemLayout}>
+              <Button type="primary" htmlType="submit">
+                Save
+              </Button>
+            </Form.Item>
+          </div>
         </div>
-        <div className="formheading">
-        <Form.Item hasFeedback>
-          {getFieldDecorator('confirm', {
-            rules: [
-              {
-                required: true,
-                message: 'Please confirm your password!',
-              },
-              {
-                validator: this.compareToFirstPassword,
-              },
-            ],
-          })(<Input.Password onBlur={this.handleConfirmBlur} />)}
-        </Form.Item>
-       </div>
-       <div className="buttonrow">
-         <div>
-          <Link to='/profile'>
-            <Button type="active" >
-              Cancel
-            </Button>
-          </Link>  
-         </div>
-        <Form.Item {...tailFormItemLayout}>
-          <Button type="primary" htmlType="submit">
-            Save
-          </Button>
-        </Form.Item>
-       </div>
-      </div>
-    </Form>
+      </Form>
     );
   }
 }
@@ -216,15 +216,15 @@ class RegistrationForm extends React.Component {
 const WrappedRegistrationForm = Form.create({ name: 'register' })(RegistrationForm);
 
 
-                     // (         state           )
-const mapStateToProps = ({profile:{ name, email, currentPassword, newPassword,confirmPassword }}) => {
+// (         state           )
+const mapStateToProps = ({ profile: { name, email, currentPassword, newPassword, confirmPassword } }) => {
   return {
     name, email, currentPassword, newPassword, confirmPassword
   }
 };
 
 const mapDispatchToProps = {
-      // onDelete:   bookDeletedInCard
+  // onDelete:   bookDeletedInCard
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(WrappedRegistrationForm);

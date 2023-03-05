@@ -196,3 +196,7 @@ border: 1px solid #FB3F3C !important;
 .buttonrow{
 	margin-top: 50px;
 }
+
+.btn-cancel{
+	margin-top: 4px;
+}

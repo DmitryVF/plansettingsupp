@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { Button } from 'antd';
 import { Row, Col, Switch, Input } from 'antd';
 import { Link } from 'react-router-dom';
-import { billChanged, planSelected} from '../../actions';
+import { billChanged, planSelected } from '../../actions';
 import './profile.css';
 
 import vector from './images/Vector.svg';
@@ -19,37 +19,37 @@ let billAnnually;
 class Profile extends Component {
 
 
-	render (){
-		const {name, email, currentPassword} = this.props;
+	render() {
+		const { name, email, currentPassword } = this.props;
 
-		
-		
+
+
 		return (
 			<div className="main">
-				<div className = "rectangle5">
-		      		<div className = "rectangle92">
-		      		<div className = "rectangle92_1">
-		      			<div className="header" >
-		      				<hr className = "vector44" />
-		      				<div className="title"> Your Profile </div>
-		      			</div>
-		      			<div className="editbuttonwrapper">
-		      				<Link to='/Profile-edit'>
-	       						 <Button type="link" className="edit">Edit</Button>
-							</Link>
-						</div>
-		      			<div className="editbuttonwrapper">
-		      				<Link to='/Profile-edit'>
-			      				<div className="ellipse49"/>
-			      				<img src={vector} className="square" alt="" />
-			      				<img src={vector1} className="pen" alt="" />
-			      			</Link>
-		      				
-		      			</div>
-		      		</div>
+				<div className="rectangle5">
+					<div className="rectangle92">
+						<div className="rectangle92_1">
+							<div className="header" >
+								<hr className="vector44" />
+								<div className="title"> Your Profile </div>
+							</div>
+							<div className="editbuttonwrapper">
+								<Link to='/plansettingsupp/Profile-edit'>
+									<Button type="link" className="edit">Edit</Button>
+								</Link>
+							</div>
+							<div className="editbuttonwrapper">
+								<Link to='/plansettingsupp/Profile-edit'>
+									<div className="ellipse49" />
+									<img src={vector} className="square" alt="" />
+									<img src={vector1} className="pen" alt="" />
+								</Link>
 
-		      			<div class="circlephoto">
-    						<img src={photo} alt="" />
+							</div>
+						</div>
+
+						<div class="circlephoto">
+							<img src={photo} alt="" />
 						</div>
 						<div className="profiledata">
 							<div className="nameheading">
@@ -70,27 +70,27 @@ class Profile extends Component {
 							<div className="formheading">
 								<Input disabled defaultValue={currentPassword} />
 							</div>
-							
+
 						</div>
-			      	</div>
-		      	</div>
-		      		  
-	     		 
+					</div>
+				</div>
+
+
 			</div>
 		);
 	};
 };
 
 
-                     // (         state           )
-const mapStateToProps = ({profile:{ name, email, currentPassword, newPassword,confirmPassword }}) => {
-  return {
-    name, email, currentPassword, newPassword, confirmPassword
-  }
+// (         state           )
+const mapStateToProps = ({ profile: { name, email, currentPassword, newPassword, confirmPassword } }) => {
+	return {
+		name, email, currentPassword, newPassword, confirmPassword
+	}
 };
 
 const mapDispatchToProps = {
-      // onDelete:   bookDeletedInCard
+	// onDelete:   bookDeletedInCard
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Profile);
