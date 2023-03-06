@@ -24,8 +24,8 @@ opacity: 0.8;
 border-radius: 10px;
 }
 .titlewrapper{
-	width: 949px;
-	opacity: 100%;
+	width: auto;
+	opacity: 1;
 	position: absolute;
 	height: 30px;
 }

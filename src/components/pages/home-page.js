@@ -121,12 +121,12 @@ class HomePage extends Component {
 
 
 				<div className="rectangle5">
-					{/* <div className = "titlewrapper"> */}
-					<div className="planSettings">
-						<span>PLAN</span> SETTINGS
+					<div className="titlewrapper">
+						<div className="planSettings">
+							<span>PLAN</span> SETTINGS
+						</div>
+
 					</div>
-					<hr className="vector65" />
-					{/* </div> */}
 					<div className="rectangle4">
 						<div className="switchwrapper">
 							<div className={billMonthly}>
