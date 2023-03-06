@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { Button } from 'antd';
 import { Row, Col, Switch, Tooltip } from 'antd';
 
-import { billChanged, planSelected} from '../../actions';
+import { billChanged, planSelected } from '../../actions';
 
 // import r11 from './images/Rectangle11.png';
 // import r12 from './images/Rectangle12.png';
@@ -21,155 +21,155 @@ let billAnnually;
 // 	};
 
 
-const Card = ({planName, price, featured, selected})=>{
+const Card = ({ planName, price, featured, selected }) => {
 
-	let classNames, classNames1, style, buttontype,showselected,buttontext ;
-	if(featured == "true"){
+	let classNames, classNames1, style, buttontype, showselected, buttontext;
+	if (featured == "true") {
 		classNames = "rectangle10";
 		classNames1 = "";
-		style= {};
-	}else{
+		style = {};
+	} else {
 		classNames = "";
 		classNames1 = "rectangle11";
-		style={display:'none'};
+		style = { display: 'none' };
 	}
 
-	if(selected == "true"){
+	if (selected == "true") {
 		buttontype = "default";
 		buttontext = "Selected";
-	}else{
+	} else {
 		buttontype = "selected";
-		showselected={display:'none'};
+		showselected = { display: 'none' };
 		buttontext = "Select";
 	}
 
 
 	return (
 
-		      		  	<div className = "rectangle4_1">
-	      		  			<div className="wrapper1"> 
-		      		  			<div className="rectangle12" /> 
-		      		  			<div className={classNames1} /> 
-		      		  			<div className={classNames} />
-	      		  			</div>
-	      		  			<div style={style} className= "circleopa"/>
-	      		  			<div style={style} className= "circle">
-	      		  			<div style={style} className="crown"/>
-	      		  			</div>
-	      		  			<div className="wrapper1">
-	      		  				<div className="planname">
-		      		  				{planName}
-		      		  				
-		      		  			</div>
-		      		  			<div className='planprice'>
-		      		  				{price}
-		      		  			</div>
-		      		  			<div className='permonth'>
-		      		  			per month
-		      		  			</div>
-		      		  			<div className='plandescription'>
-		      		  			Plan description
-		      		  			</div>
-		      		  			<div className='descriptiontext'>
-		      		  			Lorem ipsum dolor sit amet, eiusmo dconsectetur adipiscing elit, sed do eiusmod tempor incididunt
-		      		  			</div>
-		      		  			<div className='buttonwrapper'>
-		      		  				<Button className="" type={buttontype} >
-		      		  					{buttontext}
-		      		  				</Button>
-		      		  					<div className='buttontextbox' style={showselected}>	
-		      		  					 
-		      		  					<span className='confirm'/>
-		      		  					<span className='confirm1'/>
-		      		  					</div>
-		      		  			</div>
+		<div className="rectangle4_1">
+			<div className="wrapper1">
+				<div className="rectangle12" />
+				<div className={classNames1} />
+				<div className={classNames} />
+			</div>
+			<div style={style} className="circleopa" />
+			<div style={style} className="circle">
+				<div style={style} className="crown" />
+			</div>
+			<div className="wrapper1">
+				<div className="planname">
+					{planName}
 
-	      		  			</div>
-		      		  	</div>
-	);	      		  	
+				</div>
+				<div className='planprice'>
+					{price}
+				</div>
+				<div className='permonth'>
+					per month
+				</div>
+				<div className='plandescription'>
+					Plan description
+				</div>
+				<div className='descriptiontext'>
+					Lorem ipsum dolor sit amet, eiusmo dconsectetur adipiscing elit, sed do eiusmod tempor incididunt
+				</div>
+				<div className='buttonwrapper'>
+					<Button className="" type={buttontype} >
+						{buttontext}
+					</Button>
+					<div className='buttontextbox' style={showselected}>
+
+						<span className='confirm' />
+						<span className='confirm1' />
+					</div>
+				</div>
+
+			</div>
+		</div>
+	);
 }
 
 
 class HomePage extends Component {
 
 
-render (){
-	const {billType, planType} = this.props;
-
-	
-	if(billType=='monthly'){
-	  billMonthly = 'bill bold';
-	  billAnnually = 'bill normal';	
-	}else{
-	  billMonthly = 'bill normal';
-	  billAnnually = 'bill bold';	
-	}	
+	render() {
+		const { billType, planType } = this.props;
 
 
-	function onChange(checked) {
-  console.log(`switch to ${checked}`);
-	billChanged(checked);
+		if (billType == 'monthly') {
+			billMonthly = 'bill bold';
+			billAnnually = 'bill normal';
+		} else {
+			billMonthly = 'bill normal';
+			billAnnually = 'bill bold';
+		}
 
-	console.log(billMonthly);
-	}
+
+		function onChange(checked) {
+			console.log(`switch to ${checked}`);
+			billChanged(checked);
+
+			console.log(billMonthly);
+		}
 
 
 
-	return (
-		<div className="main">
-		
-		
-		
-      		<div className = "rectangle5">
-      			<div className = "titlewrapper">
-		      		 <div className = "planSettings">
-		      		 	<span>PLAN</span> SETTINGS
-		      		 </div>
-		      		  <hr className = "vector65" /> 
-	      		 </div>
-	      		  <div className = "rectangle4">
-	      		  	<div className="switchwrapper">
-	      		  	<div className={billMonthly}>
-	      		  		Bill monthly 
-	      		  	</div>
-	      		  	<div className="switch">
-	      		  		<Switch onChange={onChange} />
-	      		  	</div>
-	      		  	<Tooltip placement="bottom" title="Save 8%">
-	      		  	<div className={billAnnually}>
-	      		  		Bill annually 
-	      		  	</div>
-	      		  	</Tooltip>
-	      		  	</div>
-			<div className="cardsumwrapper">	      		  	
-      		<Card planName = "13 DAYS TRIALS PLAN" price = "$ 0" featured ="false" selected ="true"/>
-      		<Card planName = "PLAN NAME 2" price = "$ 100" featured ="false" selected ="false"/>
-      		<Card planName = "UNLIMITED PACAGES" price = "$ 300" featured ="true" selected ="false"/>
-      		</div>
+		return (
+			<div className="main">
 
-      		 	  </div>
-	      	</div>
-	      		  
-     		 
-		</div>
-	);
+
+
+				<div className="rectangle5">
+					{/* <div className = "titlewrapper"> */}
+					<div className="planSettings">
+						<span>PLAN</span> SETTINGS
+					</div>
+					<hr className="vector65" />
+					{/* </div> */}
+					<div className="rectangle4">
+						<div className="switchwrapper">
+							<div className={billMonthly}>
+								Bill monthly
+							</div>
+							<div className="switch">
+								<Switch onChange={onChange} />
+							</div>
+							<Tooltip placement="bottom" title="Save 8%">
+								<div className={billAnnually}>
+									Bill annually
+								</div>
+							</Tooltip>
+						</div>
+						<div className="cardsumwrapper">
+							<Card planName="13 DAYS TRIALS PLAN" price="$ 0" featured="false" selected="true" />
+							<Card planName="PLAN NAME 2" price="$ 100" featured="false" selected="false" />
+							<Card planName="UNLIMITED PACAGES" price="$ 300" featured="true" selected="false" />
+						</div>
+
+					</div>
+				</div>
+
+
+			</div>
+		);
+	};
 };
-};
 
 
-                     // (         state           )
-const mapStateToProps = ({planSettings:{ billType, planType }}) => {
+// (         state           )
+const mapStateToProps = ({ planSettings: { billType, planType } }) => {
 	console.log('billType');
-  return {
-    billType,
-    planType
-    //total:orderTotal
-  }
+	return {
+		billType,
+		planType
+		//total:orderTotal
+	}
 };
 
 const mapDispatchToProps = {
-      billChanged
-      // onDelete:   bookDeletedInCard
+	billChanged
+	// onDelete:   bookDeletedInCard
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(HomePage);

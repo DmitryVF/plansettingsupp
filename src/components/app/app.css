@@ -30,6 +30,10 @@ border-radius: 10px;
 	height: 30px;
 }
 
+.header{
+	width: auto;
+	margin-left: 0px;
+}
 .vector65{
 	/* Vector 65 */
 
@@ -71,7 +75,7 @@ padding-right: 4px;
 .rectangle4{
 	/* Rectangle 4 */
 position: absolute;
-top:130px;
+top:150px;
 float: left;
 width: 972px;
 height: 530px;

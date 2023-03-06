@@ -19,7 +19,7 @@ const App = () => {
 
 
         <Layout>
-          <Header>
+          <Header className="header">
             <Link to='/plansettingsupp'>
               <Button type="link">Plan settings</Button>
             </Link>
@@ -45,6 +45,12 @@ const App = () => {
           <Route
             path='/plansettingsupp/profile-edit'
             component={ProfileEditPage}
+          />
+
+
+          <Route
+            path='*'
+            component={HomePage}
           />
         </Switch>
 
